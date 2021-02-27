@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div:nth-child(even) {
+  background: #ddd;
+}
+
+.host-side, .guest-side {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.video, .text  {
+  flex: 1;
+  height: 420px;
+}
+
+#host-data-message, #host-data-meta, #guest-data-message, #guest-data-meta {
+  height: 200px;
+  overflow: scroll;
+}
+
+.container video {
+  outline: 1px solid black;
+  background: white;
+}
+
+#host-miniguest-video, #guest-minihost-video {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#host-video, #guest-video {
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

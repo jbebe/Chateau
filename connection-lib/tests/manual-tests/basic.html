@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="host-side">
+    <div class="video">
+      <video id="host-miniguest-video"></video>
+      <video id="host-video" autoplay loop>
+        <source src="test1.mp4">
+      </video>
+    </div>
+    <div class="text">
+      <button id="host-start">Start</button>
+      <button id="host-stop">Stop</button>
+      <label>Video:
+        <input id="host-video-state" type="checkbox" checked="checked">
+      </label>
+      <hr>
+      <pre id="host-data-message"></pre>
+      <pre id="host-data-meta"></pre>
+    </div>
+  </div>
+
+  <div class="guest-side">
+    <div class="video">
+      <video id="guest-minihost-video"></video>
+      <video id="guest-video" autoplay loop>
+        <source src="test2.mp4">
+      </video>
+    </div>
+    <div class="text">
+      <button id="guest-stop">Stop</button>
+      <label>Video:
+        <input id="guest-video-state" type="checkbox" checked="checked">
+      </label>
+      <hr>
+      <pre id="guest-data-message"></pre>
+      <pre id="guest-data-meta"></pre>
+    </div>
+  </div>
+</div>
+
+<script src="basic.bundle.js"></script>
+</body>
+</html>

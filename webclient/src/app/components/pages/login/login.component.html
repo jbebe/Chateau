@@ -1,0 +1,14 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    Nickname:
+    <input formControlName="name" type="text">
+  </label>
+
+  <label>
+    Password:
+    <input formControlName="password" type="password">
+  </label>
+
+  <button type="submit" [disabled]="!loginForm.valid">Enter Chat</button>
+</form>
